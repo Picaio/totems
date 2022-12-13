@@ -1,27 +1,27 @@
 const usersArr = [
   {
     id: 1,
-    perfil_img: "https://images.unsplash.com/photo-1668414308071-93879c365942?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    perfil_img: "../assets/img/unsplash/login-bg.jpg",
     nombre: "Empresa 1",
     descripcion: "Empresa que arrienda varios totems para publicidad en sitios estrategicos",
     totems: [
       {
         totemId: 1,
-        totem_nombre: "Sitio1",
+        totem_nombre: "Totem1",
         ubicacion: "ubicacion1",
         totem_img: "../assets/images/users/18.jpg",
         estado: true,
       },
       {
         totemId: 2,
-        totem_nombre: "Sitio2",
+        totem_nombre: "Totem2",
         ubicacion: "ubicacion2",
         totem_img: "../assets/images/users/18.jpg",
         estado: false,
       },
       {
         totemId: 3,
-        totem_nombre: "Sitio3",
+        totem_nombre: "Totem3",
         ubicacion: "ubicacion3",
         totem_img: "../assets/images/users/18.jpg",
         estado: true,
@@ -30,27 +30,27 @@ const usersArr = [
   },
   {
     id: 2,
-    perfil_img: "https://images.unsplash.com/photo-1668414308071-93879c365942?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    perfil_img: "../assets/img/unsplash/login-bg.jpg",
     nombre: "Empresa 2",
     descripcion: "Empresa que arrienda varios totems para publicidad en sitios estrategicos",
     totems: [
       {
         totemId: 4,
-        totem_nombre: "Sitio4",
+        totem_nombre: "Totem4",
         ubicacion: "ubicacion4",
         totem_img: "../assets/images/users/18.jpg",
         estado: true,
       },
       {
         totemId: 5,
-        totem_nombre: "Sitio5",
+        totem_nombre: "Totem5",
         ubicacion: "ubicacion5",
         totem_img: "../assets/images/users/18.jpg",
         estado: false,
       },
       {
         totemId: 6,
-        totem_nombre: "Sitio6",
+        totem_nombre: "Totem6",
         ubicacion: "ubicacion6",
         totem_img: "../assets/images/users/18.jpg",
         estado: true,
@@ -59,27 +59,27 @@ const usersArr = [
   },
   {
     id: 3,
-    perfil_img: "https://images.unsplash.com/photo-1668414308071-93879c365942?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    perfil_img: "../assets/img/unsplash/login-bg.jpg",
     nombre: "Empresa 2",
     descripcion: "Empresa que arrienda varios totems para publicidad en sitios estrategicos",
     totems: [
       {
         totemId: 7,
-        totem_nombre: "Sitio7",
+        totem_nombre: "Totem7",
         ubicacion: "ubicacion7",
         totem_img: "../assets/images/users/18.jpg",
         estado: true,
       },
       {
         totemId: 8,
-        totem_nombre: "Sitio8",
+        totem_nombre: "Totem8",
         ubicacion: "ubicacion8",
         totem_img: "../assets/images/users/18.jpg",
         estado: false,
       },
       {
         totemId: 9,
-        totem_nombre: "Sitio9",
+        totem_nombre: "Totem9",
         ubicacion: "ubicacion9",
         totem_img: "../assets/images/users/18.jpg",
         estado: true,
@@ -104,15 +104,15 @@ const userCard = (user) => {
   inRow.className = 'row g-0';
   cardDiv.appendChild(inRow);
   const inCol = document.createElement('div');
-  inCol.className = 'col-md-4';
+  inCol.className = 'col-md-5 d-flex align-items-center';
   inRow.appendChild(inCol);
   const userCardImage = document.createElement('img');
   userCardImage.src = user.perfil_img;
-  userCardImage.className = 'img-thumbnail float-start';
+  userCardImage.className = 'd-block img-thumbnail mx-auto';
   userCardImage.alt = `usuario ${user.nombre} imagen`
   inCol.appendChild(userCardImage);
   const intCol = document.createElement('div');
-  intCol.className = 'col-md-8';
+  intCol.className = 'col-md-7';
   inRow.appendChild(intCol);
   const cardBody = document.createElement('div');
   cardBody.className = 'card-body';

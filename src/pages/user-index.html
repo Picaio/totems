@@ -1,0 +1,51 @@
+{% set title = 'Ecommerce Dashboard' %} {% set page = 'index.html' %} {% extends
+    'layouts/master.html' %} {% block plugins_css %} {% endblock %} {% block content
+    %}
+    <div class="main-content app-content mt-0">
+      <div class="side-app">
+        <div class="main-container container-fluid">
+          <!-- PAGE-HEADER -->
+          <div class="page-header">
+            <h1 class="page-title">Totems</h1>
+            <div>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="javascript:void(0)">Totems</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Todos</li>
+              </ol>
+            </div>
+          </div>
+          <!-- PAGE-HEADER END -->
+          <!-- Row -->
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <div class="card">
+                <!-- <div class="card-header">
+                </div> -->
+                <div class="card-body" id="totems-container">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Row -->
+        </div>
+      </div>
+    </div>
+    {% endblock %} {% block plugins_js %}
+        <!-- JQUERY JS -->
+        <script src="../assets/js/jquery.min.js"></script>
+
+        <!-- BOOTSTRAP JS -->
+        <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+        <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- INPUT MASK JS-->
+        <script src="../assets/plugins/input-mask/jquery.mask.min.js"></script>
+
+        <!-- TypeHead js -->
+        <script src="../assets/plugins/bootstrap5-typehead/autocomplete.js"></script>
+        <script src="../assets/js/typehead.js"></script>
+         <script src="../assets/js/page/user-index.js"></script>
+
+    {% endblock %}
