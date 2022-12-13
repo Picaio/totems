@@ -1,0 +1,81 @@
+{% set title = 'Bootstrap Components &rsaquo; Offcanvas' %}
+{% set page = 'offcanvas.html' %}
+{% extends 'layouts/master.html' %}
+
+{% block content %}
+<!--app-content open-->
+  <div class="main-content app-content mt-0">
+                <div class="side-app">
+
+                    <!-- CONTAINER -->
+                    <div class="main-container container-fluid">
+
+                        <!-- PAGE-HEADER -->
+                        <div class="page-header">
+                            <h1 class="page-title">Offcanvas</h1>
+                            <div>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0)">Bootstrap</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Offcanvas</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- PAGE-HEADER END -->
+
+                        <!-- Row -->
+                        <div class="row">
+                            <div class="col-md-12 col-xl-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Default Offcanvas</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="btn-list">
+                                            <a class="btn btn-primary off-canvas" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                                Link with href
+                                            </a>
+                                            <button class="btn btn-primary off-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                                Button with data-bs-target
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">BackDrop Offcanvas</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="btn-list">
+                                            <button class="btn btn-primary off-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+                                            <button class="btn btn-primary off-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Enable backdrop (default)</button>
+                                            <button class="btn btn-primary off-canvas text-wrap" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Placement Offcanvas</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="btn-list">
+                                            <button class="btn btn-primary off-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
+                                            <button class="btn btn-primary off-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+                                            <button class="btn btn-primary off-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                    <!-- CONTAINER CLOSED -->
+
+                </div>
+
+  </div>
+<!--app-content closed-->
+{% endblock %}

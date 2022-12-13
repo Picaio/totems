@@ -1,0 +1,140 @@
+{% set title = 'Ecommerce Dashboard' %} {% set page = 'index.html' %} {% extends
+'layouts/master.html' %} {% block plugins_css %} {% endblock %} {% block content
+%}
+<div class="main-content app-content mt-0">
+  <div class="side-app">
+    <div class="main-container container-fluid">
+      <!-- PAGE-HEADER -->
+      <div class="page-header">
+        <h1 class="page-title">Usuarios</h1>
+        <div>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="javascript:void(0)">Usuarios</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Todos</li>
+          </ol>
+        </div>
+      </div>
+      <!-- PAGE-HEADER END -->
+      <!-- Row -->
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body" id="usuarios-container">
+              <!-- ROW-9 OPEN -->
+              <!-- <div class="row">
+                <div class="col-md-12 col-xl-6">
+                  <div class="card shadow-sm bg-light">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="../assets/images/media/22.jpg"
+                          class="card-img-left h-100"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Usuario</h5>
+                          <p class="card-text">
+                            Información del usuario.
+                          </p>
+                          <div class="visitor-list m-1">
+                            <div class="media m-0 mt-0 border-bottom">
+                                <img class="avatar brround avatar-md me-3" alt="totem-img-img" src="../assets/images/users/18.jpg">
+                                <div class="media-body">
+                                    <a href="javascript:void(0)" class="text-default fw-semibold">Totem</a>
+                                    <p class="text-muted ">Totem Locación</p>
+                                </div>
+                            </div>
+                            <div class="media mt-2 border-bottom">
+                                <img class="avatar brround avatar-md me-3" alt="totem-img-img" src="../assets/images/users/20.jpg">
+                                <div class="media-body">
+                                    <a href="javascript:void(0)" class="text-default fw-semibold">Totem</a>
+                                    <p class="text-muted ">Totem Locación</p>
+                                </div>
+                            </div>
+                            <div class="media mt-2">
+                                <img class="avatar brround avatar-md me-3" alt="totem-img-img" src="../assets/images/users/18.jpg">
+                                <div class="media-body">
+                                    <a href="javascript:void(0)" class="text-default fw-semibold">Totem</a>
+                                    <p class="text-muted ">Totem Locación</p>
+                                </div>
+                            </div>
+                        </div>
+                          <p class="card-text">
+                            <small class="text-muted"
+                              >Actualizado hace 3 min</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-xl-6">
+                  <div class="card shadow-sm bg-light">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="../assets/images/media/22.jpg"
+                          class="card-img-left h-100"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Usuario</h5>
+                          <p class="card-text">
+                            Información del usuario.
+                          </p>
+                          <div class="visitor-list m-1">
+                            <div class="media m-0 mt-0 border-bottom">
+                                <img class="avatar brround avatar-md me-3" alt="totem-img-img" src="../assets/images/users/18.jpg">
+                                <div class="media-body">
+                                    <a href="javascript:void(0)" class="text-default fw-semibold">Totem</a>
+                                    <p class="text-muted ">Totem Locación</p>
+                                </div>
+                            </div>
+                            <div class="media mt-2 border-bottom">
+                                <img class="avatar brround avatar-md me-3" alt="totem-img-img" src="../assets/images/users/20.jpg">
+                                <div class="media-body">
+                                    <a href="javascript:void(0)" class="text-default fw-semibold">Totem</a>
+                                    <p class="text-muted ">Totem Locación</p>
+                                </div>
+                            </div>
+                            <div class="media mt-2">
+                                <img class="avatar brround avatar-md me-3" alt="totem-img-img" src="../assets/images/users/18.jpg">
+                                <div class="media-body">
+                                    <a href="javascript:void(0)" class="text-default fw-semibold">Totem</a>
+                                    <p class="text-muted ">Totem Locación</p>
+                                </div>
+                            </div>
+                        </div>
+                          <p class="card-text">
+                            <small class="text-muted"
+                              >Actualizado hace 3 min</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div> -->
+              <!-- ROW-9 CLOSED -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Row -->
+    </div>
+  </div>
+</div>
+{% endblock %} {% block plugins_js %}
+<script src="../assets/js/page/index.js"></script>
+{% endblock %}
