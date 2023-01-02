@@ -93,10 +93,14 @@ const totemCard = (totem) => {
   const cardBody = document.createElement("div");
   cardBody.className = "card-body";
   intCol.appendChild(cardBody);
+  const linkBtn = document.createElement('a');
+  linkBtn.href = "totem-detail.html";
+  linkBtn.dataset.totem_num = totem.totemId;
+  cardBody.appendChild(linkBtn);
   const cardTitle = document.createElement("h4");
   cardTitle.className = "card-title fw-bold mb-2";
   cardTitle.innerText = totem.nombre;
-  cardBody.appendChild(cardTitle);
+  linkBtn.appendChild(cardTitle);
   const cardtotemInfo = document.createElement("p");
   cardtotemInfo.className = "card-text mb-4";
   cardtotemInfo.innerText = totem.descripcion;

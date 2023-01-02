@@ -1,6 +1,9 @@
-{% set title = 'Ecommerce Dashboard' %} {% set page = 'index.html' %} {% extends
-    'layouts/master.html' %} {% block plugins_css %} {% endblock %} {% block content
-    %}
+{% set title = 'Ecommerce Dashboard' %}
+{% set page = 'index.html' %}
+{% extends 'layouts/master.html' %}
+{% block plugins_css %}
+{% endblock %}
+{% block content %}
     <div class="main-content app-content mt-0">
       <div class="side-app">
         <div class="main-container container-fluid">
@@ -32,7 +35,8 @@
         </div>
       </div>
     </div>
-    {% endblock %} {% block plugins_js %}
+{% endblock %}
+{% block plugins_js %}
         <!-- JQUERY JS -->
         <script src="../assets/js/jquery.min.js"></script>
 
@@ -48,4 +52,4 @@
         <script src="../assets/js/typehead.js"></script>
          <script src="../assets/js/page/user-index.js"></script>
 
-    {% endblock %}
+{% endblock %}

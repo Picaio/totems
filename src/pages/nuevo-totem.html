@@ -1,0 +1,126 @@
+{% set title = 'Totems &rsaquo; Nuevo Totem' %}
+{% set page = 'nuevo-totem.html' %}
+{% extends 'layouts/master.html' %}
+
+{% block plugins_css %}
+{% endblock %}
+
+{% block content %}
+<!--app-content open-->
+<div class="main-content app-content mt-0">
+  <div class="side-app">
+    <!-- CONTAINER -->
+    <div class="main-container container-fluid">
+      <!-- PAGE-HEADER -->
+      <div class="page-header">
+        <h1 class="page-title">Nuevo Totem</h1>
+        <div>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="javascript:void(0)">Totem</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Nuevo Totem
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- PAGE-HEADER END -->
+      <!-- Row -->
+      <div class="row">
+        <div class="col-md-12 col-xl-6">
+          <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <form class="form-horizontal">
+                <div class="row mb-4">
+                  <label for="totemName" class="col-md-3 form-label"
+                    >Nombre</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="totemName"
+                      placeholder="Nombre Totem"
+                      autocomplete="username"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <label for="totemSerial" class="col-md-3 form-label"
+                    >Serial</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="totemSerial"
+                      placeholder="# Serial"
+                      autocomplete=""
+                    />
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <label class="col-md-3 form-label">Tipo de Sistema</label>
+                  <div class="col-md-9">
+                    <select name="totemSistema" class="form-control form-select select2" data-bs-placeholder="Tipo Sistema">
+                      <option value="rpi4" selected>Raspberry Pi 4</option>
+                      <option value="rpi3">Raspberry Pi 3</option>
+                      <option value="miniPcInteli5">MiniPC Intel Core i5</option>
+                      <option value="miniPcInteli3">MiniPC Intel Core i3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <label class="col-md-3 form-label">Resolución Monitor</label>
+                  <div class="col-md-9">
+                    <select name="totemMonitor" class="form-control form-select select2" data-bs-placeholder="Resolucion Monitor">
+                      <option value="hd1" selected>1920x1080</option>
+                      <option value="4k1">3814x2160</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-0 row justify-content-end">
+                  <div class="col-md-4">
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="example-checkbox2"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">Rotación +90º</span>
+                    </label>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="example-checkbox2"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">Rotación -90º</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-0 mt-4 row justify-content-end">
+                  <div class="col-md-9">
+                    <button class="btn btn-primary font-weight-bold" type="submit">Crear Totem</button>
+                    <button class="btn btn-danger font-weight-bold">Cancelar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- CONTAINER CLOSED -->
+  </div>
+  <!--app-content closed-->
+</div>
+{% endblock %}

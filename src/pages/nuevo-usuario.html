@@ -1,0 +1,146 @@
+{% set title = 'Usuarios &rsaquo; Nuevo Usuario' %}
+{% set page = 'nuevo-usuario.html' %}
+{% extends 'layouts/master.html' %}
+
+{% block plugins_css %}
+{% endblock %}
+
+{% block content %}
+<!--app-content open-->
+<div class="main-content app-content mt-0">
+  <div class="side-app">
+    <!-- CONTAINER -->
+    <div class="main-container container-fluid">
+      <!-- PAGE-HEADER -->
+      <div class="page-header">
+        <h1 class="page-title">Nuevo Usuario</h1>
+        <div>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="javascript:void(0)">Usuarios</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Nuevo Usuario
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- PAGE-HEADER END -->
+      <!-- Row -->
+      <div class="row">
+        <div class="col-md-12 col-xl-6">
+          <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+              <form class="form-horizontal">
+                <div class="row mb-4">
+                  <label for="inputName" class="col-md-3 form-label"
+                    >Nombre</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputName"
+                      placeholder="Nombre y Aplellido"
+                      autocomplete="username"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <label for="inputEmail3" class="col-md-3 form-label"
+                    >e-mail</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail3"
+                      placeholder="ejemplo@ejemplo.com"
+                      autocomplete="email"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <label for="inputPassword3" class="col-md-3 form-label"
+                    >Clave</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputPassword3"
+                      placeholder="Nueva Clave"
+                      autocomplete="new-password"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <label for="inputPassword4" class="col-md-3 form-label"
+                    >Clave</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputPassword4"
+                      placeholder="Confirmar Clave"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <label for="inputPassword3" class="col-md-3 form-label"
+                    >Empresa</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="empresa"
+                      placeholder="Cliente"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <label class="col-md-3 form-label">Tipo de Usuario</label>
+                  <div class="col-md-9">
+                    <select name="role" class="form-control form-select select2" data-bs-placeholder="Tipo Usuario">
+                      <option value="admin" selected>Admin</option>
+                      <option value="sadmin">SuperAdmin</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-0 row justify-content-end">
+                  <div class="col-md-9">
+                    <label class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        name="example-checkbox2"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">Check me Out</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-0 mt-4 row justify-content-end">
+                  <div class="col-md-9">
+                    <button class="btn btn-primary font-weight-bold" type="submit">Crear Usuario</button>
+                    <button class="btn btn-danger font-weight-bold">Cancelar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- CONTAINER CLOSED -->
+  </div>
+  <!--app-content closed-->
+</div>
+{% endblock %}
